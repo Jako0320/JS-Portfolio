@@ -1,2 +1,2 @@
 # JS-Portfolio
-Week 2 assignement, making a personal portfolio page
+Week 2 assignment, making a personal portfolio page
