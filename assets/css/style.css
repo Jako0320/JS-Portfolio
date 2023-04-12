@@ -1,0 +1,55 @@
+* {
+    /*Universal Selector*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --teal: rgb(162, 224, 221);
+    --dark-grey: rgb(48, 47, 47);
+    --white: #fff;
+}
+
+header {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    background-color: var(--dark-grey);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    color: var(--dark-grey);
+    font-size: 48px;
+    padding-left: 40px;
+    padding-right: 12px;
+    text-align: left;
+    display: inline-block;
+    background-color: var(--teal);
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 20px;
+    float: right;
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 3px;
+    padding-left: 12px;
+    padding-right: 12px;    
+    border-bottom-style: solid;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    
+}
