@@ -3,13 +3,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 :root {
     --teal: rgb(162, 224, 221);
     --dark-grey: rgb(48, 47, 47);
     --white: #fff;
-}
+    --light-grey: rgb(64, 79, 110); 
+    }
 
 header {
     color: white;
@@ -17,7 +19,6 @@ header {
     padding-bottom: 15px;
     padding-right: 50px;
     background-color: var(--dark-grey);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
 }
 
@@ -33,7 +34,6 @@ h1 {
 
 ul {
     list-style-type: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right: 20px;
     float: right;
     font-size: 26px;
@@ -44,17 +44,17 @@ li {
     display: inline-block;
     margin: 3px;
     padding-left: 12px;
-    padding-right: 12px;    
+    padding-right: 12px;
     border-bottom-style: solid;
 }
 
 a {
     color: var(--white);
-    text-decoration: none;    
+    text-decoration: none;
 }
 
-figure {    
-    display:flex;
+figure {
+    display: flex;
     background-image: url(../images/2-44-600x450.jpg);
     height: 310px;
     width: 100%;
@@ -63,13 +63,51 @@ figure {
     background-position: center;
 }
 
-h4 {    
+h4 {
     align-self: flex-end;
-    text-align:right;
     font-size: 28px;
     color: var(--dark-grey);
     background-color: var(--teal);
     margin-left: 80%;
     margin-bottom: 2%;
     padding: 10px;
+}
+
+main {
+    margin-left: 10px;
+}
+
+section {
+    display: flex;    
+}
+
+aside {    
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    float: left;
+    width: 25%;
+    border-color: var(--light-grey);
+    border-right-style: solid;
+}
+
+h2 {
+    font-size: 48px;
+    color: var(--light-grey);
+    text-align: right;
+    padding: 5px;
+}
+
+article {    
+    float: right;
+    width: 70%;
+    padding-left: 10px;
+}
+
+p {
+    text-align: left;
+    color: var(--light-grey);
+    line-height: 1.5;
+    padding-bottom: 20px;
 }
