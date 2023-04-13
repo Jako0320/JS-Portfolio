@@ -1,8 +1,4 @@
 * {
-    /*Universal Selector*/
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -10,8 +6,12 @@
     --teal: rgb(162, 224, 221);
     --dark-grey: rgb(48, 47, 47);
     --white: #fff;
-    --light-grey: rgb(64, 79, 110); 
-    }
+    --light-grey: rgb(64, 79, 110);
+}
+
+body {
+    max-width: 100%;
+}
 
 header {
     color: white;
@@ -55,7 +55,7 @@ a {
 
 figure {
     display: flex;
-    background-image: url(../images/2-44-600x450.jpg);
+    background-image: url(../images/Hussle.jpg);
     height: 310px;
     width: 100%;
     margin-bottom: 25px;
@@ -63,7 +63,7 @@ figure {
     background-position: center;
 }
 
-h4 {
+h3 {
     align-self: flex-end;
     font-size: 28px;
     color: var(--dark-grey);
@@ -73,15 +73,15 @@ h4 {
     padding: 10px;
 }
 
-main {
-    margin-left: 10px;
-}
+main {}
 
 section {
-    display: flex;    
+    display: flex;
+    margin: 30px;
+    width: 100%;
 }
 
-aside {    
+aside {
     margin-right: 20px;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -99,10 +99,11 @@ h2 {
     padding: 5px;
 }
 
-article {    
+article {
     float: right;
     width: 70%;
     padding-left: 10px;
+
 }
 
 p {
@@ -110,4 +111,78 @@ p {
     color: var(--light-grey);
     line-height: 1.5;
     padding-bottom: 20px;
+}
+
+
+
+
+h4 {
+    font-size: 24px;
+    text-align: left;
+    line-height: 2;
+    color: var(--dark-grey);
+    background-color: var(--teal);
+}
+
+.Works {
+
+    background-color: white;
+    width: 70%;
+    padding: 0px 0px 0px;
+    margin: 0px;
+    border-style: none;
+}
+
+button {
+    width: 438px;
+    margin: 10px;
+    border-color: var(--teal);
+    border-style: solid;
+    padding: 100px 0px 20px 0px;
+}
+
+.Works-Large {
+    display: block;
+    width: 100%;
+}
+
+.Surf {
+    max-width: 100%;
+    width: 98%;
+    padding: 300px 0px 20px 0px;
+    background-image: url(../images/Surf.jpg);
+}
+
+.Works-Small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Led {
+    background-image: url(../images/LED.jpg);
+}
+
+.Calculator {
+    background-image: url(../images/Calculator.jpg);
+}
+
+.Pastel {
+    background-image: url(../images/Pastel.jpg);
+}
+
+.Run {
+    background-image: url(../images/Run.jpg);
+}
+
+div p {
+    padding-bottom: 0px;
+}
+
+div {
+    background-color: var(--teal);
+    width: 150px;
+    padding: 0px 7px 7px;
+    border-style: none;
 }
