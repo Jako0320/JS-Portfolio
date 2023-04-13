@@ -104,7 +104,6 @@ article {
 }
 
 p {
-    text-align: left;
     color: var(--light-grey);
     line-height: 1.5;
     padding-bottom: 20px;
@@ -112,7 +111,6 @@ p {
 
 h4 {
     font-size: 24px;
-    text-align: left;
     line-height: 2;
     color: var(--dark-grey);
     background-color: var(--teal);
@@ -136,6 +134,11 @@ button {
     padding: 100px 0px 20px 0px;
 }
 
+button:hover {
+    background-color: #772014;
+    color: #af1f1f;
+}
+
 .Works-Large {
     display: block;
     width: 100%;
@@ -153,7 +156,6 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin
 }
 
 .Led {
@@ -177,8 +179,26 @@ div p {
 }
 
 div {
+    display: inline-block;
+    float: left;
+    text-align: left;
     background-color: var(--teal);
-    width: 150px;
     padding: 0px 7px 7px;
     border-style: none;
+}
+
+.Contact {
+    background-color: white;
+    width: 80%;
+}
+
+.Contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    float: none;
+    text-align: center;
+}
+
+.Contact a {
+    color: var(--light-grey);
 }
