@@ -190,11 +190,12 @@ div {
 .Contact {
     background-color: white;
     width: 80%;
+    padding-top: 45px;
 }
 
 .Contact ul {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
     float: none;
     text-align: center;
 }
