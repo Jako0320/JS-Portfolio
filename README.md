@@ -17,4 +17,4 @@ All pictures used are free of use, found on pexels.com.
 
 ## Personal Notes
 I struggled a bit with the distinction between using block or flex but was able to circle back and fix things.
-The hover function works, but since I have a full image on most of the buttons, it only shows on my personal project.
+

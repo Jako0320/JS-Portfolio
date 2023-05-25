@@ -176,9 +176,8 @@ button:hover {
 }
 
 .Works-Small {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
+
   width: 100%;
 }
 
@@ -186,18 +185,22 @@ button:hover {
 .Calculator,
 .Pastel,
 .Run {
-  max-width: 50%;
-  width: 100%;
-  padding: 300px 0px 20px 0px;
+  max-width: 50%; 
   width: 49%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 20px;  
   border-color: var(--teal);
   border-width: 5px;
   border-style: solid;
   padding: 100px 0px 20px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.Led,
+.Pastel {
+    margin-right: 15px;
+}
 .Led {
   background-image: url(../images/LED.jpg);
 }
