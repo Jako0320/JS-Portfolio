@@ -9,14 +9,20 @@
     <title>JS Portfolio</title>
 </head>
 
-
+<!-- GIVEN I need to sample a potential employee's previous work -->
+<!-- WHEN I load their portfolio -->
+<!-- THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them -->
 
 <body>
 
     <header>
         <h1>Jacques Scoffoni</h1>
+        <!-- WHEN I click one of the links in the navigation -->
+        <!-- THEN the UI scrolls to the corresponding section -->
         <ul>
             <li><a href="#About-me">About Me</a></li>
+            <!-- WHEN I click on the link to the section about their work -->
+            <!-- THEN the UI scrolls to a section with titled images of the developer's applications -->
             <li><a href="#Work">Work</a></li>
             <li><a href="#Contact-me">Contact Me</a></li>
             <li><a href="Resume">Resume</a></li>
@@ -24,7 +30,13 @@
     </header>
 
     <figure>
-        <h3>Ready to hussle!</h3>
+        <div class="starryNight">
+            <img src="./assets/images/Hustle.jpg" alt="Starry night" class="firstPic">
+            <div class="textBox">
+                <h3>Junior Developer</h3>
+            </div>
+        </div>
+        <img src="./assets/images/profilePic.jpg" alt="Profile pic" class="secondPic">
     </figure>
 
     <main>
@@ -35,65 +47,70 @@
             </aside>
 
             <article>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p>
+                <p> I started programming in the late 90's, mainly python, pascal and visual basic, completing a
+                    computer science certificate in 2002.
+                    I shifted to business after completing my quantum chemistry diploma and only used programming
+                    sporadically for specific needs across my various roles</p>
 
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p>
+                <p> I never lost interesting in programming however, still coding for myself on occasion, and I
+                     eventually shifted back to programming, completing the fullstack boot camp offered by Columbia and eDX in
+                    2023, and am looking for a position as a back end developer.</p>
             </article>
-
         </section>
 
         <section>
             <aside id="Work">
                 <h2>Work</h2>
             </aside>
+            <!-- WHEN I click on the images of the applications -->
+            <!-- THEN I am taken to that deployed application -->
             <div class="Works">
                 <article class="Works-Large">
-                    <button class="Surf">
-                        <div>
-                            <h4>Surf Report</h4>
-                            <p>MERN Stack</p>
-                        </div>
-                    </button>
+                    <!-- WHEN I am presented with the developer's first application -->
+                    <!-- THEN that application's image should be larger in size than the others -->
+                    <a href="https://jako0320.github.io/baseball_statsandodds/">
+                        <button class="baseball">
+                            <div>
+                                <h4>Baseball Statistics and Odds</h4>
+                                <p>Javascript/CSS</p>
+                            </div>
+                        </button>
+                    </a>
                 </article>
+
                 <article class="Works-Small">
-                    <button class="Led">
-                        <div>
-                            <h4>Led Wall</h4>
-                            <p>Node/IoT</p>
-                        </div>
-                    </button>
-                    <button class="Calculator">
-                        <div>
-                            <h4>Calculator</h4>
-                            <p>React/Javascript/CSS</p>
-                        </div>
-                    </button>
-                    <button class="Pastel">
-                        <div>
-                            <h4>Pastel Puzzels</h4>
-                            <p>MERN Stack</p>
-                        </div>
-                    </button>
-                    <button class="Run">
-                        <div>
-                            <h4>Run Buddy</h4>
-                            <p>HTML/CSS</p>
-                        </div>
-                    </button>
+                    <a href="" class="Led">
+                        <button>
+                            <div>
+                                <h4>Led Wall</h4>
+                                <p>Node/IoT</p>
+                            </div>
+                        </button>
+                    </a>
+                    <a href="" class="Calculator">
+                        <button>
+                            <div>
+                                <h4>Calculator</h4>
+                                <p>React/Javascript/CSS</p>
+                            </div>
+                        </button>
+                    </a>
+                    <a href="" class="Pastel">
+                        <button>
+                            <div>
+                                <h4>Pastel Puzzels</h4>
+                                <p>MERN Stack</p>
+                            </div>
+                        </button>
+                    </a>
+                    <a href="" class="Run">
+                        <button>
+                            <div>
+                                <h4>Run Buddy</h4>
+                                <p>HTML/CSS</p>
+                            </div>
+                        </button>
+                    </a>
                 </article>
             </div>
         </section>
@@ -112,32 +129,6 @@
                 </ul>
 
             </div>
-
-
         </section>
-
     </main>
-    <!-- GIVEN I need to sample a potential employee's previous work -->
-    <!-- WHEN I load their portfolio -->
-    <!-- THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them -->
-
-
-
-
-
 </body>
-
-
-
-
-
-<!-- WHEN I click one of the links in the navigation -->
-<!-- THEN the UI scrolls to the corresponding section -->
-<!-- WHEN I click on the link to the section about their work -->
-<!-- THEN the UI scrolls to a section with titled images of the developer's applications -->
-<!-- WHEN I am presented with the developer's first application -->
-<!-- THEN that application's image should be larger in size than the others -->
-<!-- WHEN I click on the images of the applications -->
-<!-- THEN I am taken to that deployed application -->
-<!-- WHEN I resize the page or view the site on various screens and devices -->
-<!-- THEN I am presented with a responsive layout that adapts to my viewport -->
